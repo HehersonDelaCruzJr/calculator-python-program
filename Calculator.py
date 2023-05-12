@@ -18,7 +18,7 @@ while True:
                 Answer = number1 + number2
                 print("Result:", Answer)
                 
-                try_again = input("Do you want to try again? (Y/N): ")
+                try_again = input("Do you want to try again with the operation? (Y/N): ")
                 if try_again.upper() != 'Y' :
                     break
 
@@ -29,7 +29,8 @@ while True:
                 Answer = number1 - number2
                 print("Result:", Answer)
 
-                try_again = input("Do you want to try again? (Y/N): ")
+                try_again = input(
+                    "Do you want to try again with with the operation? (Y/N): ")
                 if try_again.upper() != 'Y':
                     break
 
@@ -40,7 +41,8 @@ while True:
                 Answer = number1 * number2
                 print("Result:", Answer)
 
-                try_again = input("Do you want to try again? (Y/N): ")
+                try_again = input(
+                    "Do you want to try again with the operation? (Y/N): ")
                 if try_again.upper() != 'Y':
                     break
 
@@ -55,7 +57,8 @@ while True:
                 else:
                     raise ZeroDivisionError("Cannot divide by zero")
                 
-                try_again = input("Do you want to try again? (Y/N): ")
+                try_again = input(
+                    "Do you want to try again with the operation? (Y/N): ")
                 if try_again.upper() != 'Y':
                         break
     
@@ -68,7 +71,7 @@ while True:
         
     #Ask the user if they want to continue if the user continue It will go back to selection of operation
     #if the user did not continue it will print "Thank you for using Calculator" and will exit
-    try_again = input("Do you want continue? (Y/N): ")
+    try_again = input("Do you want continue using calculator? (Y/N): ")
     if try_again.upper() != 'Y':
         print("Thank you for using Calculator")
         break
