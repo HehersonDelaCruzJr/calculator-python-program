@@ -6,5 +6,8 @@ number2 = float(input("Second Number:"))
 # Answer = number1 + number2
 # print(Answer)
 
-Answer = number1 - number2
+# Answer = number1 - number2
+# print(Answer)
+
+Answer = number1 * number2
 print(Answer)
