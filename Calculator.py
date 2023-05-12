@@ -5,24 +5,37 @@ print("Subtraction")
 print("Multiplication")
 print("Division")
 
+#The user will input their choice of operation
+operation = input(
+    "Enter your choice (Addition, Subtraction, Multiplication, Division): ")
+
 #Getting the data from user
-# number1 = float(input("First Number:"))
-# number2 = float(input("Second Number:"))
+if operation == 'Addition':
+    number1 = float(input("Please enter your first number: "))
+    number2 = float(input("Please enter your second number: "))
+    Answer = number1 + number2
+    print("Result:", Answer)
 
-# Answer = number1 + number2
-# print(Answer)
+elif operation == 'Subtraction':
+    number1 = float(input("Please enter your first number: "))
+    number2 = float(input("Please enter your second number: "))
+    Answer = number1 - number2
+    print("Result:", Answer)
 
-# Answer = number1 - number2
-# print(Answer)
-
-# Answer = number1 * number2
-# print(Answer)
+elif operation == 'Multiplication':
+    number1 = float(input("Please enter your first number: "))
+    number2 = float(input("Please enter your second number: "))
+    Answer = number1 * number2
+    print("Result:", Answer)
+    
 
 #This lets the user know that in division the denominator can't be zero
-# if number2 != 0:
-#     Answer = number1 / number2
-#     print(Answer)
-
-# else:
-#     raise ZeroDivisionError("Cannot divide by zero")
+elif operation == 'Division':
+    number1 = float(input("Please enter your first number: "))
+    number2 = float(input("Please enter your second number: "))
+    if number2 != 0:
+        Answer = number1 / number2
+        print("Result:", Answer)
+    else:
+        raise ZeroDivisionError("Cannot divide by zero")
 
